@@ -1,0 +1,87 @@
+body{
+    margin:0;
+    background-color: rgb(251, 246, 239);
+    font: 16px;
+    font-family:'Gill Sans', sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    background-color:rgb(121, 49, 49);
+}
+.search{
+    width: 30%;
+    height: 40px;
+}
+.top-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionList, .sectionEdit, .sectionCreate{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.table td{    
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(121, 49, 49);
+}
+.table tr:hover{
+    background-color: rgb(166, 99, 228);
+    color: white;
+}
+a{
+    margin: 0 10px 0 10px;
+}
+a:hover{
+color: white;
+}
+h1{
+    color:rgb(121, 59, 59);
+}
+.tbl-list{
+    background-color: white;
+}
+.form-group{
+   margin: 10px;
+   display:flex;
+   flex-direction: column;
+}
+.form-group input{
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    border: rgb(121, 59, 59) 1px solid;
+}
+.btn-save{
+background-color: rgb(166, 99, 228);
+border: none;
+width: 120px;
+height: 40px;
+border-radius: 5px;
+font-weight: bold;
+color:rgb(251, 246, 239);
+margin: 20px;
+}
+.btn-save:hover{
+    background-color: blueviolet;
+}
+
+.sectionEdit{
+    display:none;
+}
+.sectionCreate{
+    display: none;
+}

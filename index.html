@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Hockey</title>
+</head>
+<body>
+    <header>
+            <input type="search" id="search-input" class = "search" placeholder = "Search for names.." >
+    </header>
+    
+    <div class = "top-container">
+
+    <section class = "sectionList" id = "sectionList">
+          <h1>Players list</h1>
+          <table class = "table">          
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Jersey</th>
+                <th>Age</th>
+                <th>Born</th>
+                <th></th>
+            </tr>
+            <tbody class = "tbl-list" id = "list"></tbody>
+        </table>
+         <button class = "btn-save" id = "addNew" >Add new</button>
+    </section>
+    <section class = "sectionEdit" id = "sectionEdit">
+        <h1>Edit player</h1>
+        <form class = "form-player" id = "form-edit">            
+            <div class="form-group" >
+                <label for="id">Id</label>
+                <input type="text" name="id" id="editId">
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="editName">
+            </div>
+            <div class="form-group">
+                <label for="jersey">Jersey</label>
+                <input type="number" name="jersey" id="editJersey">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="editAge">
+            </div>
+            <div class="form-group">
+                <label for="born">Born</label>
+                <input type="text" name="born" id="editBorn">
+            </div>
+            <div class = "form-groupt">
+                <input type="submit" value="Save" id="btn-save" class = "btn-save">
+            </div>
+        </form>
+    </section>
+
+    <section class = "sectionCreate" id = "sectionCreate">
+       <h1>Create a new player</h1> 
+       <form class = "form-player" id = "form-add">
+            <div class="form-group" >
+                <label for="id">Id</label>
+                <input type="text" name="id" id="newId">
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="newName">
+            </div>
+            <div class="form-group">
+                <label for="jersey">Jersey</label>
+                <input type="text" name="jersey" id="newJersey">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" name="age" id="newAge">
+            </div>
+            <div class="form-group">
+                <label for="born">Born</label>
+                <input type="text" name="born" id="newBorn">
+            </div>
+            <div class = "btn-submit">
+                <input type="submit" value="Save" id="saveNew" class = "btn-save">
+            </div>
+        </form>
+    </section>
+</div>
+</body>
+
+<script src="script.js"></script>
+</html>
